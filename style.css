@@ -15,6 +15,10 @@
   background-repeat: no-repeat;
 }
 
+.filetypes a:link{
+  text-decoration: none;
+}
+
 .pdf::after,
 .xls::after,
 .doc::after {
