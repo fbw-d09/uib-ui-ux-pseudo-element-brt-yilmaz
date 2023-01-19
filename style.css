@@ -1,0 +1,71 @@
+.quotes li {
+  margin-bottom: 1rem;
+}
+
+.quotes li::before,
+.quotes li::after {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
+  background-size: contain;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/161359/quotes.png");
+  background-repeat: no-repeat;
+}
+
+.pdf::after,
+.xls::after,
+.doc::after {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.3rem;
+  margin-left: 2rem;
+  margin-top: .2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(.3rem); 
+}
+
+.pdf::after {
+  background-image: url("https://img.icons8.com/officel/64/000000/pdf.png");
+}
+
+.xls::after {
+  background-image: url("https://img.icons8.com/dusk/64/000000/ms-excel.png");
+}
+
+.doc::after {
+  background-image: url("https://img.icons8.com/dusk/64/000000/ms-word.png");
+}
+
+.sandwich {
+  border: 1px solid black;
+  margin-top: 2rem;
+}
+
+.sandwich li {
+  list-style-type: none;
+}
+
+.sandwich ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sandwich--first::before {
+  content: "";
+  display: block;
+  height: 1rem;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+} 
+
+.sandwich--last::before {
+  content: "";
+  display: block;
+  height: 1rem;
+  background: linear-gradient(0.25turn, #f69d3c , #ebf8e1, #3f87a6);
+} 
